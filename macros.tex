@@ -1,0 +1,146 @@
+\usepackage{bbm}
+\usepackage{xcolor}
+
+% Mathbb
+\newcommand{\mbbA}{\mathbb{A}}
+\newcommand{\mbbB}{\mathbb{B}}
+\newcommand{\mbbC}{\mathbb{C}}
+\newcommand{\mbbD}{\mathbb{D}}
+\newcommand{\mbbE}{\mathbb{E}}
+\newcommand{\mbbF}{\mathbb{F}}
+\newcommand{\mbbG}{\mathbb{G}}
+\newcommand{\mbbH}{\mathbb{H}}
+\newcommand{\mbbI}{\mathbb{I}}
+\newcommand{\mbbJ}{\mathbb{J}}
+\newcommand{\mbbK}{\mathbb{K}}
+\newcommand{\mbbL}{\mathbb{L}}
+\newcommand{\mbbM}{\mathbb{M}}
+\newcommand{\mbbN}{\mathbb{N}}
+\newcommand{\mbbO}{\mathbb{O}}
+\newcommand{\mbbP}{\mathbb{P}}
+\newcommand{\mbbQ}{\mathbb{Q}}
+\newcommand{\mbbR}{\mathbb{R}}
+\newcommand{\mbbS}{\mathbb{S}}
+\newcommand{\mbbT}{\mathbb{T}}
+\newcommand{\mbbU}{\mathbb{U}}
+\newcommand{\mbbV}{\mathbb{V}}
+\newcommand{\mbbW}{\mathbb{W}}
+\newcommand{\mbbX}{\mathbb{X}}
+\newcommand{\mbbY}{\mathbb{Y}}
+\newcommand{\mbbZ}{\mathbb{Z}}
+
+% Mathcal
+\newcommand{\mcalA}{\mathcal{A}}
+\newcommand{\mcalB}{\mathcal{B}}
+\newcommand{\mcalC}{\mathcal{C}}
+\newcommand{\mcalD}{\mathcal{D}}
+\newcommand{\mcalE}{\mathcal{E}}
+\newcommand{\mcalF}{\mathcal{F}}
+\newcommand{\mcalG}{\mathcal{G}}
+\newcommand{\mcalH}{\mathcal{H}}
+\newcommand{\mcalI}{\mathcal{I}}
+\newcommand{\mcalJ}{\mathcal{J}}
+\newcommand{\mcalK}{\mathcal{K}}
+\newcommand{\mcalL}{\mathcal{L}}
+\newcommand{\mcalM}{\mathcal{M}}
+\newcommand{\mcalN}{\mathcal{N}}
+\newcommand{\mcalO}{\mathcal{O}}
+\newcommand{\mcalP}{\mathcal{P}}
+\newcommand{\mcalQ}{\mathcal{Q}}
+\newcommand{\mcalR}{\mathcal{R}}
+\newcommand{\mcalS}{\mathcal{S}}
+\newcommand{\mcalT}{\mathcal{T}}
+\newcommand{\mcalU}{\mathcal{U}}
+\newcommand{\mcalV}{\mathcal{V}}
+\newcommand{\mcalW}{\mathcal{W}}
+\newcommand{\mcalX}{\mathcal{X}}
+\newcommand{\mcalY}{\mathcal{Y}}
+\newcommand{\mcalZ}{\mathcal{Z}}
+
+% General quick stuff
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+\newcommand{\lam}{\lambda}
+\newcommand{\Lam}{\Lambda}
+\newcommand{\gs}{>}
+\newcommand{\ls}{<}
+\newcommand{\Hilbert}{\mcalH}
+
+% Sets of numbers
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\N}{\naturals}
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\Z}{\integers}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\Q}{\rationals}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\R}{\reals}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\C}{\complex}
+
+% Important sets
+\newcommand{\torus}{\mathbb{T}}
+\newcommand{\sphere}{\mathbb{S}}
+\newcommand{\Sp}{\mathbb{S}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\kfield}{\mathbb{K}}
+\newcommand{\measures}{\mathcal{M}}
+
+% Useful notation
+\newcommand{\lebesgue}{\mathcal{L}}
+\newcommand{\hausdorff}{\mathcal{H}}
+\newcommand{\Haus}{\mathcal{H}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\fourier}[1]{\widehat{#1}}
+\newcommand{\Fourier}{\mathcal{F}}
+
+% Functions, norm, absolute value, etc. / Format
+\newcommand{\conj}[1]{\overline{#1}}
+\newcommand{\norm}[1]{\left\|  #1  \right\|}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\vol}[1]{\abs{#1}}
+\newcommand{\of}[1]{\left( #1 \right)}
+\newcommand{\conv}{\ast}
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\newcommand{\llbrace}{\left\lbrace}
+\newcommand{\rrbrace}{\right\rbrace}
+\newcommand{\inset}[1]{\left \{ #1 \right \}}
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}
+\newcommand{\inner}[1]{\angles{#1}}
+\newcommand{\closure}[1]{\overline{#1}}
+\newcommand{\quotient}[2]{#1 / #2}
+\newcommand{\grad}{\nabla}
+\newcommand{\laplace}{\Delta}
+\newcommand{\functionDisplay}[5]{
+\begin{array}{l@{$\;$}c@{$\;$}c@{$\;$}c}
+    #1 & #2 &\longrightarrow & #3\\
+    & #4 &\longmapsto & #5
+\end{array}
+}
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+  \left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+  #1 % the function
+  \littletaller % pretend it's a little taller at normal size
+  \right|_{#2} % this is the delimiter
+  }}
+\newcommand{\littletaller}{\mathchoice{\vphantom{\big|}}{}{}{}}
+\newcommand{\charf}[1]{\mathbbm{1}_{#1}}
+
+% Text in math mode, operators
+\DeclareMathOperator{\essup}{essup}
+\DeclareMathOperator{\spt}{supp}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\tRe}{Re}
+\DeclareMathOperator{\tIm}{Im}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\diff}{d\!}
+\DeclareMathOperator{\Dil}{Dil}
+\DeclareMathOperator{\pv}{p.v.}
+\DeclareMathOperator{\Rot}{Rot}
+\DeclareMathOperator{\divergence}{div}
+\DeclareMathOperator{\interior}{Int}
+\DeclareMathOperator{\im}{im}
+
+\newcommand{\dv}[3][]{\frac{\diff ^{#1} #3}{\diff {#2}^{#1}}}
+\newcommand{\pdv}[3][]{\frac{\partial^{#1} #3}{\partial {#2}^{#1}}}
+\newcommand{\mpdv}[3]{\frac{\partial ^2 #3}{\partial #1 \partial #2}}
