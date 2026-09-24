@@ -1,4 +1,4 @@
-# LaTeX2InD — unified Mac/Windows script
+# LaTeX2InD
 
 **LaTeX2InD** is a script that provides LaTeX support in Adobe InDesign.
 
